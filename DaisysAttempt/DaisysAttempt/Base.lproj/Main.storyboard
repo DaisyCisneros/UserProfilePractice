@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gYA-mh-vfP">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Profile View Controller-->
+        <scene sceneID="jUQ-aj-9YW">
+            <objects>
+                <tableViewController id="gYA-mh-vfP" userLabel="User Profile View Controller" customClass="UserProfileTableViewController" customModule="DaisysAttempt" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="57A-ht-cFB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="171" id="Qma-8v-Ngj" userLabel="User Table View Cell" customClass="UserTableViewCell" customModule="DaisysAttempt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="171"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qma-8v-Ngj" id="ecN-eA-NqU">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="170.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dave Smith" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsE-7x-0nd">
+                                            <rect key="frame" x="196" y="25" width="180.5" height="47"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I am a Chinese Professor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh7-tf-kjX">
+                                            <rect key="frame" x="177" y="80" width="219" height="59"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="DaveSmith" translatesAutoresizingMaskIntoConstraints="NO" id="ka7-up-7bM">
+                                            <rect key="frame" x="34" y="20" width="135" height="119"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="192" id="BXH-ex-vDt"/>
+                                                <constraint firstAttribute="height" constant="192" id="I1r-My-iFb"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="OsE-7x-0nd" firstAttribute="centerY" secondItem="ecN-eA-NqU" secondAttribute="centerY" id="3x0-ff-5KU"/>
+                                        <constraint firstItem="OsE-7x-0nd" firstAttribute="top" secondItem="ecN-eA-NqU" secondAttribute="topMargin" constant="14" id="CX9-Jk-UjL"/>
+                                        <constraint firstAttribute="bottom" secondItem="ka7-up-7bM" secondAttribute="bottom" constant="-17.5" id="Feq-tS-cTp"/>
+                                        <constraint firstItem="Sh7-tf-kjX" firstAttribute="leading" secondItem="ka7-up-7bM" secondAttribute="trailing" constant="8" id="KZs-nV-uPx"/>
+                                        <constraint firstItem="ka7-up-7bM" firstAttribute="leading" secondItem="ecN-eA-NqU" secondAttribute="leading" constant="20" id="Nxs-gk-7xo"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="OsE-7x-0nd" secondAttribute="trailing" constant="17.5" id="Pu0-uc-QSI"/>
+                                        <constraint firstItem="OsE-7x-0nd" firstAttribute="leading" secondItem="ka7-up-7bM" secondAttribute="trailing" id="bEo-Mm-1xZ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Sh7-tf-kjX" secondAttribute="trailing" constant="-2" id="hMs-dr-Fla"/>
+                                        <constraint firstItem="Sh7-tf-kjX" firstAttribute="top" secondItem="OsE-7x-0nd" secondAttribute="bottom" constant="8" id="rAk-fA-dYB"/>
+                                        <constraint firstItem="ka7-up-7bM" firstAttribute="top" secondItem="ecN-eA-NqU" secondAttribute="top" constant="20" id="vmd-Lt-m8M"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ProfName" destination="OsE-7x-0nd" id="fdV-I9-UJO"/>
+                                    <outlet property="ProfTitle" destination="Sh7-tf-kjX" id="dsn-Ci-sBw"/>
+                                    <outlet property="ProfilePic" destination="ka7-up-7bM" id="efu-vy-Y0C"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="196" id="x5e-n2-8au" userLabel="User Post Table View Cell" customClass="UserPostTableViewCell" customModule="DaisysAttempt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="199" width="414" height="196"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x5e-n2-8au" id="3ve-Xa-YUp">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="195.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wtZ-Gt-aXf">
+                                            <rect key="frame" x="44" y="-1" width="326" height="196"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="UserPost" destination="wtZ-Gt-aXf" id="RXl-bN-vxH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gYA-mh-vfP" id="GAC-vp-NPg"/>
+                            <outlet property="delegate" destination="gYA-mh-vfP" id="Fff-Ok-pfi"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eS-kW-9yz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="579.24107142857144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DaveSmith" width="192" height="192"/>
+    </resources>
+</document>
